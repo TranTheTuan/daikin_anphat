@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+body {
+	line-height: 1.57;
+	color: #666;
+	font-size: 75%; /* 12px */
+	font-family: "FrutigerLTW02-55Roman", helvetica, arial, meiryo, san-serif;
+	text-align: left;
+	background: #FFF;
+  -webkit-text-size-adjust: 100%;
+}
+html.is-ModalOpen > body {
+	overflow: hidden;
+	height: 100%;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+address, em, strong {
+	font-style: normal;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+a,
+a:link {
+	color: #0099cc;
+	text-decoration: none;
+}
+a:visited {
+	color: #464f9a;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #0099cc;
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 17px;
+}
+
+dl {
+	margin-bottom: 17px;
+}
+
+dl dd {
+	margin-bottom: 7px;
+}
+
+small {
+	font-size: 100%;
+}
+

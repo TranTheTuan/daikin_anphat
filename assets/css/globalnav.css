@@ -1,0 +1,846 @@
+@charset "utf-8";
+
+
+/* ---------- ---------- ----------
+	::index::
+
+ A_0. contets.css
+ A. Setting
+ B. GlobalNav Layout
+ C. GlobalNav Modules
+ D. MegaMenu
+
+---------- ---------- ---------- */
+
+
+/* A_0. contets.css
+---------- ---------- ---------- */
+#GlobalNavWrap .gen-FloatLeft {
+	float: left !important;
+}
+#GlobalNavWrap .gen-FloatRight {
+	float: right !important;
+}
+#GlobalNavWrap .gen-FloatNone {
+	float: none !important;
+}
+#GlobalNavWrap .gen-TextItalic {
+	margin-right: 0.2em !important;
+	font-style: italic !important;
+}
+#GlobalNavWrap .gen-TextItalic sup,
+#GlobalNavWrap .gen-TextItalic sub {
+	margin-left: 0.2em !important;
+}
+#GlobalNavWrap .gen-TextResetUppercase {
+	text-transform: none !important;
+}
+
+#GlobalNavWrap .Mkr {
+	display: inline-block;
+	background-image: url(../images/mkr_sprite.png);
+	background-repeat: no-repeat;
+	vertical-align: baseline;
+	width: 10px;
+	height: 10px;
+	margin-right: 4px;
+	background-position: -20px -77px;
+}
+
+/*-- Grid -- */
+#GlobalNavWrap .Grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#GlobalNavWrap .Grid {
+	margin: 0 -30px 0 0;
+	letter-spacing: -.40em;
+}
+#GlobalNavWrap .Grid__Col {
+	display: inline-block;
+	margin: 0 30px 17px 0;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+#GlobalNavWrap .Grid__Col p:last-child,
+#GlobalNavWrap .Grid__Col dl:last-child,
+#GlobalNavWrap .Grid__Col dl:last-child dd:last-child,
+#GlobalNavWrap .Grid__Col ul:last-child,
+#GlobalNavWrap .Grid__Col ul:last-child li:last-child,
+#GlobalNavWrap .Grid__Col .Block--ImgAndTxt .Block__Img p:last-child {
+	margin-bottom: 0;
+}
+
+/*-- Block -- */
+#GlobalNavWrap .Block:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* Block--ImgAndTxt */
+#GlobalNavWrap .Block--ImgAndTxt .Block__Img {
+	display: inline;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Img--Left {
+	float: left;
+	margin-right: 30px;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Img--Right {
+	float: right;
+	margin-left: 30px;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Img .Img {
+	margin-bottom:15px;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Img .ImgCaption {
+	margin:-10px 0 20px;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Content {
+	overflow: hidden;
+}
+#GlobalNavWrap .Block--ImgAndTxt .Block__Content--Wrap {
+	overflow: visible;
+}
+
+/*-- List -- */
+#GlobalNavWrap .List {
+	margin-bottom: 15px;
+}
+#GlobalNavWrap .List .List {
+	margin-bottom: 0;
+}
+#GlobalNavWrap .List li {
+	margin-bottom: 5px;
+}
+#GlobalNavWrap .List--Link > li {
+	padding-left: 14px;
+	text-indent: -14px;
+}
+
+/*-- Img -- */
+#GlobalNavWrap .Img {
+	margin-bottom: 13px;
+	text-align: center;
+}
+
+
+/* A. Setting
+---------- ---------- ---------- */
+#GlobalNavWrap {
+	font-size: 117%; /* 14px */
+}
+#GlobalNavWrap p, #GlobalNavWrap ul, #GlobalNavWrap ol, #GlobalNavWrap li, #GlobalNavWrap dl, #GlobalNavWrap dt, #GlobalNavWrap dd, #GlobalNavWrap div, #GlobalNavWrap form, #GlobalNavWrap input, #GlobalNavWrap textarea, #GlobalNavWrap table, #GlobalNavWrap th, #GlobalNavWrap td {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+#GlobalNavWrap a,
+#GlobalNavWrap a:link,
+#GlobalNavWrap a:visited {
+	text-decoration: none;
+	font-size: 100%;
+}
+#GlobalNavWrap a:hover,
+#GlobalNavWrap a:active {
+	font-size: 100%;
+}
+
+
+/* B. GlobalNav Layout
+---------- ---------- ---------- */
+#GlobalNavWrap {
+	width: 100%;
+	min-width: 960px;
+	background: url(/dg_common/images/bg_gnav.png) repeat-x;
+}
+#GlobalNavWrap #GlobalNavArea > ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#GlobalNavWrap #GlobalNavArea {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	z-index:1002;
+}
+#Gnav_Overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -20px;
+	z-index: 100;
+	width: 20px;
+	height: 48px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #GlobalNavWrap {
+    /*display: none;*/
+    min-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap #GlobalNavArea {
+    min-width: 320px;
+    /* width: 100%; */
+  }
+}
+
+/* C. GlobalNav Modules
+---------- ---------- ---------- */
+#GlobalNavWrap #GlobalNavArea ul li {
+	float: left;
+	margin: 10px 0;
+}
+#GlobalNavWrap #GlobalNavArea ul li a {
+	display: block;
+	margin: -10px 0;
+	padding: 13px 15px;
+	color: #737373;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*#GlobalNavWrap #GlobalNavArea ul li a:hover,*/
+#GlobalNavWrap #GlobalNavArea ul li a:focus {
+	color: #0097e0;
+}
+#GlobalNavWrap #GlobalNavArea ul li.is-Hover a,
+#GlobalNavWrap #GlobalNavArea ul li.is-Current.is-Hover a {
+	position: relative;
+	color: #0097e0;
+	z-index: 1001;
+}
+#GlobalNavWrap #GlobalNavArea ul li.is-Current a {
+	position: relative;
+	color: #0097e0;
+	z-index: 1001;
+}
+#GlobalNavWrap #GlobalNavArea ul li.js-Disable a:hover {
+	color: #0097e0;
+}
+
+
+
+/* D. MegaMenu
+---------- ---------- ---------- */
+#GlobalNavWrap .MegaMenuWrap {
+	position:absolute;
+	width: 100%;
+	z-index: 1000;
+	overflow: hidden;
+}
+#GlobalNavWrap .MegaMenuArea.is-Show {
+	display: block;
+}
+#GlobalNavWrap .MegaMenuArea {
+	display: none;
+	width: 960px;
+	margin: 0 auto;
+	color: #000;
+	-moz-box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+	background: #e9edf2;
+}
+
+#GlobalNavWrap .MegaMenu_Content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#GlobalNavWrap .MegaMenu_Content{
+	width: 960px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenuScrollBar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#GlobalNavWrap .MegaMenu_Content a,
+#GlobalNavWrap .MegaMenu_Content a:link {
+	color: #000;
+}
+#GlobalNavWrap .MegaMenu_Content a:hover,
+#GlobalNavWrap .MegaMenu_Content a:active {
+	color: #0097e0;
+	text-decoration: none;
+}
+#GlobalNavWrap .MegaMenu_Content .Layer--Lower a,
+#GlobalNavWrap .MegaMenu_Content .Layer--Lower a:link {
+	color: #666;
+}
+#GlobalNavWrap .MegaMenu_Content .Layer--Lower a:hover,
+#GlobalNavWrap .MegaMenu_Content .Layer--Lower a:active {
+	color: #0097e0;
+	text-decoration: none;
+}
+#GlobalNavWrap .MegaMenu_Content .Category_Content dt {
+	margin-bottom: 5px;
+}
+#GlobalNavWrap .MegaMenu_ContentInner:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#GlobalNavWrap .MegaMenu_ContentInner {
+	width: 900px;
+	margin-left:30px;
+	padding:30px 0 23px;
+	overflow: hidden;
+}
+#GlobalNavWrap .MegaMenu_About .MegaMenu_ContentInner {
+  padding-bottom: 50px;
+}
+#GlobalNavWrap .MegaMenu_Content .Grid {
+	margin-right: -30px;
+}
+#GlobalNavWrap .MegaMenu_Content .Grid--TypeCol2 > .Grid__Col--Size1 {
+	width: 435px;
+	margin-right: 30px;
+}
+#GlobalNavWrap .MegaMenu_Content .List--Link.Grid--TypeCol4 > .Grid__Col--Size1 {
+	width: 180px;
+	margin: 0 30px 10px 0;
+}
+#GlobalNavWrap .MegaMenu_Content .List--Link.Grid--TypeCol3 > .Grid__Col--Size1 {
+	width: 178px;
+	margin: 0 30px 10px 0;
+}
+#GlobalNavWrap .MegaMenu_Content .List {
+    margin-bottom: 15px;
+}
+#GlobalNavWrap .MegaMenu_Content .List li {
+    margin-bottom: 5px;
+}
+#GlobalNavWrap .MegaMenu_Content .List--Link > li {
+    padding-left: 14px;
+    text-indent: -14px;
+}
+#GlobalNavWrap .MegaMenu_Content .Block--ImgAndTxt .Block__Img--Left {
+	margin-right: 30px;
+}
+#GlobalNavWrap .MegaMenu_Content .Block--ImgAndTxt .Block__Img--Right{
+	margin-left: 30px;
+}
+#GlobalNavWrap .MegaMenu_Content .Level1 {
+	font-size: 129%; /* 18px */
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#GlobalNavWrap .MegaMenu_Content .Level2 {
+	font-size: 115%; /* 16px */
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#GlobalNavWrap .MegaMenu_Content .Level1 a,
+#GlobalNavWrap .MegaMenu_Content .Level1 a:link,
+#GlobalNavWrap .MegaMenu_Content .Level1 a:visited,
+#GlobalNavWrap .MegaMenu_Content .Level1 a:focus,
+#GlobalNavWrap .MegaMenu_Content .Level2 a,
+#GlobalNavWrap .MegaMenu_Content .Level2 a:link,
+#GlobalNavWrap .MegaMenu_Content .Level2 a:visited,
+#GlobalNavWrap .MegaMenu_Content .Level2 a:focus {
+	color: #000;
+}
+#GlobalNavWrap .MegaMenu_Content .Level1 a:hover,
+#GlobalNavWrap .MegaMenu_Content .Level1 a:active,
+#GlobalNavWrap .MegaMenu_Content .Level2 a:hover,
+#GlobalNavWrap .MegaMenu_Content .Level2 a:active {
+	color: #0097e0;
+}
+#GlobalNavWrap .MegaMenu_Content .Level1 p {
+	font-size: 67%; /* 12px */
+    padding-left: 0;
+    font-weight: normal;
+    text-transform: none;
+    text-indent: 0;
+}
+#GlobalNavWrap .MegaMenu_Content .Level2 p {
+    font-size: 86%; /* 12px */
+    padding-left: 0;
+    font-weight: normal;
+    text-transform: none;
+    text-indent: 0;
+}
+#GlobalNavWrap .MegaMenu_Content .Category_Top {
+  display: none;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  width: 640px;
+  border-bottom: 3px solid #d2d7d9;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Top {
+  width: 100%;
+}
+#GlobalNavWrap .is-Active .MegaMenu_Content .Category_Top {
+  display: block;
+  border-bottom: 2px solid #d2d7d9;
+}
+#GlobalNavWrap .is-Active .MegaMenu_Content .Related_Content {
+  border-top: 2px solid #d2d7d9;
+}
+#GlobalNavWrap .is-Active .MegaMenuArea {
+	opacity: 1!important;
+}
+#GlobalNavWrap .MegaMenu_Content .Category_Content:after {
+	content:"";
+	display:block;
+	clear: both;
+}
+#GlobalNavWrap .MegaMenu_Content .Category_Content > dl > dd {
+	margin-left: 14px;
+}
+#GlobalNavWrap .MegaMenu_Content .Related_Content {
+	margin-top:30px;
+	padding-top: 25px;
+	border-top: 3px solid #d2d7d9;
+}
+#GlobalNavWrap .MegaMenu_Content .Feature_Content a .List--Link,
+#GlobalNavWrap .MegaMenu_Content .Feature_Content .List--Link a {
+	font-weight: bold;
+}
+#GlobalNavWrap .MegaMenu_Content .Feature_Content .List--Link li {
+	margin-bottom: 15px;
+}
+#GlobalNavWrap .MegaMenu_Content .Feature_Content a .Img {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenuWrap {
+    display: block;
+    position: relative;
+    padding-bottom: 0 !important;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenuArea {
+    display: block !important;
+    width: 100%;
+    height: auto !important;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content {
+    display: block !important;
+    position: relative !important;
+    min-width: 320px;
+    width: 100%;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_ContentInner {
+    min-width: 320px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* MegaMenu_Products */
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content {
+	background: #e9edf2 url(/dg_common/images/bg_megamenu_products.png) repeat-y left;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content > .gen-FloatLeft {
+	width: 600px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content dt {
+	margin-top: 20px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content dt:first-child {
+	margin-top: 0;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content dd ul:last-child {
+	margin-bottom: 0;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content > .gen-FloatLeft > dd {
+	width: 180px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content > .gen-FloatRight {
+	width: 250px;
+}
+
+/* MegaMenu_About */
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About {
+	background: #e9edf2 url(/dg_common/images/bg_megamenu_about.png) repeat-y;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content {
+	float: left;
+	width: 640px;
+	background: url(/dg_common/images/bg_megamenu_about_categorycontent.png) repeat-y;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content > dl.gen-FloatLeft {
+	width: 300px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content > .gen-FloatLeft dd {
+	width: 280px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content > .gen-FloatRight dd {
+	width: 280px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Feature_Content {
+	float: right;
+	width: 200px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Feature_Content a p {
+	background: #FFF;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Feature_Content a img:hover {
+	opacity: 0.8;
+}
+
+/* MegaMenu_Investor */
+#GlobalNavWrap .MegaMenu_Investor .Category_Top {
+  width: auto;
+}
+#GlobalNavWrap .MegaMenu_Investor .List--Link.Grid--TypeCol3 > .Grid__Col--Size1 {
+  width: calc(33.33% - 30px);
+  box-sizing: border-box;
+}
+#GlobalNavWrap .MegaMenu_Investor .Category_Content .List--Link {
+	font-size: 115%;/* 16px */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Investor .Feature_Content {
+	float: right;
+	width: 200px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Investor .Feature_Content a p {
+	background: #FFF;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Investor .Feature_Content a img:hover {
+	opacity: 0.8;
+}
+
+/* MegaMenu_Csr */
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Csr {
+	background: #e9edf2 url(/dg_common/images/bg_megamenu_csr.png) repeat-y;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Csr .Category_Content {
+	float: left;
+	width: 640px;
+}
+#GlobalNavWrap .MegaMenu_Csr .Category_Content .List--Link {
+	font-size: 115%; /* 16px */
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#GlobalNavWrap .MegaMenu_Csr .Category_Content .Level2 {
+  display: block;
+  margin-left: -14px;
+  font-size: 100%;
+  text-indent: 0;
+}
+#GlobalNavWrap .MegaMenu_Csr .Category_Content .Layer--Lower {
+  font-size: 85%;
+  font-weight: normal;
+  text-transform: none;
+}
+#GlobalNavWrap .MegaMenu_Csr .Category_Content .g-foot-r {
+  text-align: right;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Csr .Feature_Content {
+	float: right;
+	width: 200px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Csr .Feature_Content a p {
+	background: #FFF;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Csr .Feature_Content a img:hover {
+	opacity: 0.8;
+}
+
+/* MegaMenu_Careers */
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers {
+	background: #e9edf2 url(/dg_common/images/bg_megamenu_careers.png) repeat-y;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers .Category_Content {
+	float: left;
+	width: 640px;
+}
+#GlobalNavWrap .MegaMenu_Careers .Category_Content .List--Link {
+	font-size: 115%; /* 16px */
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers .Feature_Content {
+	float: right;
+	width: 200px;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers .Feature_Content a p {
+	background: #FFF;
+}
+#GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers .Feature_Content a img:hover {
+	opacity: 0.8;
+}
+
+
+/* 2016/05/09 shodastudio add */
+#GlobalNavWrap .MegaMenu_Content .Feature_Content {
+	float: none !important;
+	position:absolute;
+	top:30px;
+	right:32px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content > .gen-FloatRight,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_Products .Category_Content > .gen-FloatLeft > dd,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content > dl.gen-FloatLeft,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Category_Content > .gen-FloatLeft dd,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content .gen-FloatRight,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_About .Feature_Content
+  {
+    float: none !important;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content .List li {
+    float: none;
+    width: 100%;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content .Block--ImgAndTxt .Block__Img--Right {
+    display: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content .Level1 p {
+    display: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content a p,
+  .set-responsiveWebDesign #GlobalNavWrap .MegaMenu_Content.MegaMenu_Careers .Feature_Content a p {
+    display: none;
+  }
+}
+
+#GlobalNavWrapSp {
+  display: none;
+}
+
+/* sp */
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #GlobalNavWrap,
+  .set-responsiveWebDesign #GlobalNavWrap #MegaMenuWrap {
+    display: none;
+  }
+  .set-responsiveWebDesign #SearchWrap.is-Show {
+    display: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp.is-Show {
+    display: block;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp {
+    display: none;
+    /*display: block;*/
+    width: 100%;
+    min-width: 320px;
+    position: absolute;
+    z-index: 500;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp {
+    background: #e9edf2;
+  }
+  .set-responsiveWebDesign.header-open #GlobalNavWrapSp {
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .set-responsiveWebDesign.header-open #pkg-Wrapper,
+  .set-responsiveWebDesign.header-open #ContentsWrap,
+  .set-responsiveWebDesign.header-open #ContentsArea,
+  .set-responsiveWebDesign.header-open #GlobalLocationsWrap,
+  .set-responsiveWebDesign.header-open #FooterWrap {
+    display: none;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp a {
+    display: block;
+    padding: 13px 5px;
+    color: #666;
+    font-weight: bold;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp a:hover {
+    text-decoration: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl,
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dt {
+    margin-bottom: 0;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dt {
+    border-top: 1px solid #d2d7d9;
+    width: 100%;
+    position: relative;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dt:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  	width: 11px;
+  	height: 13px;
+    margin-top: -6px;
+  	margin-right: 15px;
+  	background: url(../images/icon_plus_b.png) no-repeat 0 0;
+    background-size: 100% auto;
+  	vertical-align: middle;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dt.is-Show:after {
+  	background: url(../images/icon_minus_b.png) no-repeat 0 0;
+  	background-size: 100% auto;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .is-Current a {
+  	color: #fff;
+    background: #0097e0;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .is-Current:after {
+  	background-image: url(../images/icon_plus_w.png);
+  	background-size: 100% auto;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .is-Current.is-Show:after {
+  	background-image: url(../images/icon_minus_w.png);
+  	background-size: 100% auto;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dt:first-child {
+    border-top: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dt a {
+  	color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 14px 10px;
+    font-weight: bold;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl dd {
+    display: none;
+    margin-bottom: 0;
+    border-top: 1px solid #d2d7d9;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list {
+    padding: 0 10px 0 20px;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl + .GrobalNav_list {
+    padding: 0;
+    background: #d2d7d9;
+    border-top: 1px solid #d2d7d9;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl + .GrobalNav_list a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list li {
+    border-top: 1px solid #d2d7d9;
+    position: relative;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-right: 17px;
+    background: url(../images/mkr_sprite.png) no-repeat -20px -77px;
+    vertical-align: middle;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list li.is-Current:after {
+    background: url(../images/mkr_sprite.png) no-repeat -20px -60px;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list li:first-child {
+    border-top: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl + .GrobalNav_list > .GrobalNav_list--global {
+  	border-bottom: 2px solid #a4aeb3;
+    background: #e9edf2;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp dl + .GrobalNav_list > .GrobalNav_list--global a {
+  	color: #000;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .Mkr--Medium.Mkr--ArwLightBlue {
+    display: none;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list .GrobalNav_list_search {
+    padding: 17px 10px;
+    border-top: 1px solid #a4aeb3;
+  }
+
+  .set-responsiveWebDesign #SearchAreaSp {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+  }
+
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list .GrobalNav_list_search:after {
+    content: normal;
+    display: none;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search input {
+    width: 100%;
+    -webkit-appearance: normal;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search .InputTxt {
+    /*float: left;*/
+    display: table-cell;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search .InputTxt input {
+    padding-left: 10px;
+    height: 32px;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search .SearchButton {
+    /*float: right;*/
+    display: table-cell;
+    width: 44px;
+    margin-bottom: 0;
+    background: #0097e0;
+    vertical-align: middle;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search .SearchButton button {
+    position: relative;
+    width: 44px;
+    height: 32px;
+    padding: 0;
+    color: #0099cc;
+    background: #0099cc;
+    border: none;
+    overflow: hidden;
+  }
+  .set-responsiveWebDesign #GlobalNavWrapSp #GlobalNavAreaSp .GrobalNav_list_search .SearchButton button::before {
+    width: 16px;
+    height: 18px;
+    margin: -9px 0 0 -8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(/dg_common/images/icon_search_w_sp.png) no-repeat 0 0 / 100% auto;
+    content: '';
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign.localnav-open.show-header #GlobalLocationsWrap {
+    display: none;
+  }
+  html.set-responsiveWebDesign.localnav-open #GlobalLocationsWrap {
+    display: none;
+  }
+}
+
+#MegaMenu_Overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}

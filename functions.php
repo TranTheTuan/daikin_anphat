@@ -17,6 +17,9 @@ function daikinanphat_register_style(){
     wp_enqueue_style('daikin-anphat-stylesheet6', get_template_directory_uri() . '/assets/css/footer.css', array(), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet7', get_template_directory_uri() . '/assets/css/print.css', array(), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet8', get_template_directory_uri() . '/assets/css/module.css', array(), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet9', get_template_directory_uri() . '/assets/css/en/common.css', array(), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet10', get_template_directory_uri() . '/assets/css/en/common/common.css', array(), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet11', get_template_directory_uri() . '/assets/css/en/local.css', array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'daikinanphat_register_style');
@@ -47,11 +50,17 @@ add_action('wp_enqueue_scripts', 'daikinanphat_register_footer_scripts');
 
 function daikinanphat_menus(){
     $locations = array(
-        'primary' => 'Primary Menu'
+        'primary' => 'Primary Menu 1'
     );
     register_nav_menus($locations);
 }
 
 add_action('init', 'daikinanphat_menus');
+
+function daikinanphat_post_type(){
+    register_post_type('product', array('label'=>'product', 'public' => true));
+}
+
+add_action('init', 'daikinanphat_post_type');
 
 ?>

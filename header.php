@@ -1,58 +1,83 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<!--[if IE 8]><html class="no-js ie8 lte-ie9" lang="ja"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9 lte-ie9" lang="ja"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="ja">
+<!--<![endif]-->
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Site Template">
-    <meta name="author" content="https://youtube.com/FollowAndrew">    
-    <link rel="shortcut icon" href="images/logo.png"> 
-    
-	<?php wp_head(); ?>
+  <link rel="canonical" href="http://www.daikinpmc.com/en/index.html">
+  <meta name="robots" content="index,follow,noodp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Hydraulic product which suits your system could be found in Daikin Hydraulic products series." />
+  <meta name="keywords" content="Oil Hydraulics,DAIKIN,SUPER UNIT,ECORICH,Oil cooling unit,Pump,Inverter" />
+  <meta property="og:url" content="http://www.daikinpmc.com/en/index.html">
+  <meta property="og:title" content="[Daikin] Oil Hydraulics">
+  <meta property="og:description" content="Hydraulic product which suits your system could be found in Daikin Hydraulic products series.">
+  <meta property="og:image" content="/dg_common/images/og.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+<link type="image/png" rel="icon" href="/dg_common/images/android-chrome-192x192.png" sizes="192x192">
+<link type="image/png" rel="icon" href="/dg_common/images/favicon-96x96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="/dg_common/images/apple-touch-icon-180x180.png" sizes="180x180">
 
-</head> 
+  <?php wp_head(); ?>
+</head>
+<body class="g-page-dept g-page-categoryNav set-responsiveWebDesign">
+    <div id="g-wrapper" class="g-wrapper">
+      <div id="MegaMenu_Overlay" style="display: none;"></div>
 
-<body>
-    
-    <header class="header text-center">	    
-	    <a class="site-title pt-lg-4 mb-0" href="index.html">SiteName.dev</a>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZXH4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo" >			
-				
-				<ul class="navbar-nav flex-column text-sm-center text-md-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="post.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Blog Post</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="page.html"><i class="fas fa-file-image fa-fw mr-2"></i>Blog Page</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="archive.html"><i class="fas fa-archive fa-fw mr-2"></i>Blog Archive</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link btn btn-primary" href="contact.html"><i class="fas fa-envelope fa-fw mr-2"></i>Contact Us</a>
-					</li>
-				</ul>
-				<hr>
-				<ul class="social-list list-inline py-3 mx-auto">
-					<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-				</ul>
+      <noscript>
+      <div id="NoScriptMessageWrap">
+      <p>To use all available functions on this website, JavaScript must be enabled in your browser.</p>
+      <!-- / #NoScriptMessageWrap --></div>
+      </noscript>
 
-			</div>
-		</nav>
-    </header>
+      <div class="BlockSkip"><a href="#ContentsWrap">Skip to main content</a></div>
+
+      <div id="HeaderWrap">
+        <div id="HeaderArea">
+          <p class="Logo"><a href="https://www.daikin.com/index.html"><img src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" width="171" height="36" alt="DAIKIN"></a></p>
+          <p class="Region">GLOBAL</p>
+          <div class="HeaderLinks">
+            <ul>
+              <li class="Search g-lnav-cur"><label for="q" class="g-lnav_cur"><a href="" class="g-lnav_cur"><span>Search</span></a></label></li>
+              <li id="GlobalNavBtn" class="Menu"><a href="javascript:void(0);"><span>Menu</span></a></li>
+            </ul>
+          <!-- / .HeaderLinks --></div>
+          <!-- / #HeaderArea --></div>
+          <!-- / #HeaderWrap --></div>
+          <div id="SearchWrap">
+            <div id="SearchArea">
+              <form action="https://www.daikin.com/pbsearch/" method="get">
+                <p class="InputTxt"><input type="text" id="q2" name="q" value="" placeholder="Search here. Find anything." class="searchBox"></p>
+                <p class="SearchButton"><input type="submit" value="Search"></p>
+              </form>
+              <p class="closeButton"><a href="javascript:void(0);"><img src="/dg_common/images/mkr_close.png" width="10" height="10" alt="close"></a></p>
+            <!-- / #SearchArea --></div>
+          <!-- / #SearchWrap --></div>
+          <div id="GlobalNavWrap">
+            <div id="GlobalNavArea">
+              <?php
+                wp_nav_menu(
+                  array(
+                    'menu' => 'primary',
+                    'container' => '',
+                    'theme_location' => 'primary',
+                    'items_wrap' => '<ul>%3$s</ul>'
+                  )
+                  );
+              ?>
+              <!-- <ul>
+                <li><a href="https://www.daikin.com/corporate/index.html">ABOUT DAIKIN</a></li>
+                <li class=""><a href="https://www.daikin.com/products/index.html">PRODUCTS &amp; SERVICES</a></li>
+                <li class=""><a href="https://www.daikin.com/investor/index.html">INVESTOR RELATIONS</a></li>
+                <li class=""><a href="https://www.daikin.com/csr/index.html">SUSTAINABILITY</a></li>
+                <li class=""><a href="https://www.daikin.com/careers/index.html">CAREERS</a></li>
+                <li class="js-Disable"><a href="https://www.daikin.com/news/index.html">NEWS</a></li>
+              </ul> -->
+          <!-- / #GlobalNavArea --></div>
+        <!-- / #GlobalNavWrap --></div>

@@ -1,0 +1,23 @@
+.letter ul {
+    list-style-type: none;
+}
+
+.letter-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+a.product {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(0, 153, 204);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+a.product:hover {
+    text-decoration: underline;
+
+}

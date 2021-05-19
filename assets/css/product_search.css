@@ -1,0 +1,43 @@
+#product-search-main-content {
+    width: 960px;
+}
+
+#product-search-header {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+
+#search-result-count {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 21.9833px;
+}
+
+.limit {
+    background-color: rgb(243, 243, 243);
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 21.9833px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.limit a {
+    color: rgb(0, 153, 204);
+    font-size: 14px;
+    line-height: 21.9833px;
+    text-decoration: rgb(0, 153, 204);
+    text-decoration-color: rgb(0, 153, 204);
+}
+
+#not-found {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 21.9833px;
+}

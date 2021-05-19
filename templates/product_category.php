@@ -31,20 +31,6 @@ $term_metas = get_term_meta($cid);
 get_header();
 
 ?>
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $category->name; ?> | Oil Hydraulics List | Daikin Industries, Ltd. Oil Machine Division</title>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/common.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/product_category.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap-grid.css">
-    
-</head>
-<body> -->
     <div class="container" id="choose-products-main-content">
         <div class="row">
             <div class="col products-by-x-header"><?php echo $category->name; ?></div>

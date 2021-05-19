@@ -1,7 +1,10 @@
 <?php
 get_header();
+var_dump(CFS()->get('features'));
+var_dump(get_post_meta($post->ID));
+// var_dump($post);
 ?>
-<?php get_template_part('/template-parts/product_line-header', NULL, array('meta' => $meta)) ?>
+<?php get_template_part('/template-parts/product_line-header') ?>
 <div class="container">
     <div class="w-75 mx-auto">
         <ul class="main-header">
@@ -28,16 +31,16 @@ get_header();
         <?php if (count(CFS()->get('functions')) > 0): ?>
             <li><a href="#block1">Functions</a></li>
         <?php endif ?>
-        <?php if (count(CFS()->get('function-options')) > 0): ?>
+        <?php if (count(CFS()->get('function_options')) > 0): ?>
             <li><a href="#block1">Function Options</a></li>
         <?php endif ?>
-        <?php if (count(CFS()->get('unit-options')) > 0): ?>
+        <?php if (count(CFS()->get('unit_options')) > 0): ?>
             <li><a href="#block1">Unit Options</a></li>
         <?php endif ?>
-        <?php if (count(CFS()->get('hardware-options')) > 0): ?>
+        <?php if (count(CFS()->get('hardware_options')) > 0): ?>
             <li><a href="#block1">Hardware Options</a></li>
         <?php endif ?>
-        <?php if (count(CFS()->get('case-study')) > 0): ?>
+        <?php if (count(CFS()->get('case_study')) > 0): ?>
             <li><a href="#block1">Case Study of energy-saving</a></li>
         <?php endif ?>
         </ul>
@@ -46,15 +49,15 @@ get_header();
     <div class="dk-body">
         <?php if (count(CFS()->get('features')) > 0): ?>
             <h3>Features</h3>
-            <?php foreach($ft of CFS()->get('features')): ?>
-                <div><?php echo $ft['ft-title']; ?></div>
-                <div><?php echo $ft['ft-description']; ?></div>
-                <div><?php echo $ft['ft-detail']; ?></div>
+            <?php foreach(CFS()->get('features') as $key => $ft): ?>
+                <div><?php echo $ft; ?></div>
+                <div><?php echo CFS()->get('ft-description')[$key]; ?></div>
+                <div><?php echo CFS()->get('ft-detail')[$key]; ?></div>
         <?php endforeach; endif; ?>
 
         <?php if (count(CFS()->get('functions')) > 0): ?>
             <h3>Functions</h3>
-            <?php foreach($ft of CFS()->get('functions')): ?>
+            <?php foreach(CFS()->get('functions') as $ft): ?>
                 <div><?php echo $ft['func-title']; ?></div>
                 <div><?php echo $ft['func-description']; ?></div>
                 <div><?php echo $ft['func-detail']; ?></div>
@@ -62,7 +65,7 @@ get_header();
 
         <?php if (count(CFS()->get('function-options')) > 0): ?>
             <h3>Functions Options</h3>
-            <?php foreach($ft of CFS()->get('function-options')): ?>
+            <?php foreach(CFS()->get('function-options') as $ft): ?>
                 <div><?php echo $ft['fo-title']; ?></div>
                 <div><?php echo $ft['fo-description']; ?></div>
                 <div><?php echo $ft['fo-detail']; ?></div>
@@ -70,7 +73,7 @@ get_header();
 
         <?php if (count(CFS()->get('hardware-options')) > 0): ?>
             <h3>Hardware Options</h3>
-            <?php foreach($ft of CFS()->get('hardware-options')): ?>
+            <?php foreach(CFS()->get('hardware-options') as $ft): ?>
                 <div><?php echo $ft['hw-title']; ?></div>
         <?php endforeach; endif; ?>
     </div>

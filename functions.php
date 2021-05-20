@@ -1,16 +1,16 @@
 <?php
 
 // Set up taxonomy-term-image module
-include_once(get_template_directory() . '/lib/taxonomy-term-image/taxonomy-term-image.php');
-function taxonomy_term_image_custom_js_dir_url($option_name) {
-    return get_template_directory_uri() . '/lib/taxonomy-term-image/js';
-}
-add_filter('taxonomy-term-image-js-dir-url', 'taxonomy_term_image_custom_js_dir_url');
+// include_once(get_template_directory() . '/lib/taxonomy-term-image/taxonomy-term-image.php');
+// function taxonomy_term_image_custom_js_dir_url($option_name) {
+//     return get_template_directory_uri() . '/lib/taxonomy-term-image/js';
+// }
+// add_filter('taxonomy-term-image-js-dir-url', 'taxonomy_term_image_custom_js_dir_url');
 
-// Product
-include_once(get_template_directory() . '/product.php');
-// Product category
-include_once(get_template_directory() . '/product-category.php');
+// // Product
+// include_once(get_template_directory() . '/product.php');
+// // Product category
+// include_once(get_template_directory() . '/product-category.php');
 
 function daikinanphat_theme_support(){
     add_theme_support('title-tag');

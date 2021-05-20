@@ -13,7 +13,7 @@
                 );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();
-                    var_dump(get_post_meta($post->ID));?>   
+                    var_dump($post);?>   
                     <div class="col-lg-4 mb-3">
                         <div class="dk-el">
                             <a href="<?php echo get_post_permalink($post->ID); ?>">

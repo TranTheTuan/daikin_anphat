@@ -7,6 +7,8 @@
 
 get_header();
 
+get_template_part('/template-parts/product_line-header');
+
 the_content();
 
 get_template_part('/template-parts/product_line-list');

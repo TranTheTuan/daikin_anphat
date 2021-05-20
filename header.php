@@ -18,7 +18,7 @@
         
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="<?php echo get_home_url() ?>">
 				<img src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" alt="" width="170" height="36"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>

@@ -4,21 +4,21 @@ get_header();
 <?php get_template_part('/template-parts/product_line-header') ?>
 <div class="container mb-5">
     <div class="w-75 mx-auto">
-        <div class="main-header d-flex justify-content-between text-center">
+        <div class="main-header row text-center">
         <?php if (CFS()->get('applications') != ""): ?>
-            <div class="header-box flex-fill"><a href="<?php echo get_template_directory_uri() . '/' . CFS()->get('applications') ?>">Applications</a></div>
+            <div class="header-box col"><a href="<?php echo get_home_url() . '/' . CFS()->get('applications') . '/?pid=' . $post->ID ?>">Applications</a></div>
         <?php endif ?>
         <?php if (CFS()->get('specifications') != ""): ?>
-            <div class="header-box flex-fill"><a href="<?php echo get_template_directory_uri() . '/' . CFS()->get('specifications') ?>">Specifications</a></div>
+            <div class="header-box col"><a href="<?php echo get_home_url() . '/' . CFS()->get('specifications') . '/?pid=' . $post->ID ?>">Specifications</a></div>
         <?php endif ?>
         <?php if (CFS()->get('rate_characteristics') != ""): ?>
-            <div class="header-box flex-fill"><a href="<?php echo get_template_directory_uri() . '/' . CFS()->get('rate_characteristics') ?>">Pressure - Flow rate characteristics</a></div>
+            <div class="header-box col"><a href="<?php echo get_home_url() . '/' . CFS()->get('rate_characteristics') . '/?pid=' . $post->ID  ?>">Pressure - Flow rate characteristics</a></div>
         <?php endif ?>
         <?php if (CFS()->get('rating_range') != ""): ?>
-            <div class="header-box flex-fill"><a href="<?php echo get_template_directory_uri() . '/' . CFS()->get('rating_range') ?>">Continuous and Short-time Rating Range</a></div>
+            <div class="header-box col"><a href="<?php echo get_home_url() . '/' . CFS()->get('rating_range') . '/?pid=' . $post->ID  ?>">Continuous and Short-time Rating Range</a></div>
         <?php endif ?>
         <?php if (CFS()->get('download') != ""): ?>
-            <div class="header-box flex-fill"><a href="<?php echo CFS()->get('download') ?>" target="_blank">Download</a></div>
+            <div class="header-box col"><a href="<?php echo CFS()->get('download') ?>" target="_blank">Download</a></div>
         <?php endif ?>
         </div>
         <ul class="spec-headers">
@@ -60,18 +60,18 @@ get_header();
             <div id="ho-block">
                 <h3>Hardware Options</h3>
                 <?php foreach(CFS()->get('hardware_options') as $ft): ?>
-                    <div><?php echo $ft['ho_name']; ?></div>
+                    <div><a href="<?php echo get_home_url() . '/' . $ft['link']  . '/?pid=' . $post->ID  ?>"><?php echo $ft['name']; ?></a></div>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
 
         <?php if (CFS()->get('case_studies') != ""): ?>
-            <div id="ho-block">
+            <div id="cs-block">
                 <h3>Case studies of energy-saving</h3>
                 <div>
                     <h4>Various case studies of energy-saving such as the power consumption reductions in 72%.</h4>
                     <?php foreach(CFS()->get('case_studies') as $ft): ?>
-                        <div><a href="<?php echo $ft['link'] ?>"><?php echo $ft['name']; ?></a></div>
+                        <div><a href="<?php echo $ft['link']  . '/?pid=' . $post->ID  ?>"><?php echo $ft['name']; ?></a></div>
                     <?php endforeach; ?>
                 </div>
             </div>

@@ -12,11 +12,11 @@
                 'order' => 'ASC', 
                 );
                 $loop = new WP_Query( $args );
-                while ( $loop->have_posts() ) : $loop->the_post();?>
+                while ( $loop->have_posts() ) : $loop->the_post();?>   
                     <div class="col-lg-4 mb-3">
                         <div class="dk-el">
                             <a href="<?php echo get_post_permalink($post->ID); ?>">
-                                <img src="<?php echo get_template_directory_uri() . CFS()->get('small_image') ?>" alt="super unit" style="max-width: 100%;">
+                                <img src="<?php echo CFS()->get('small_image') ?>" alt="super unit" style="max-width: 100%;">
                                 <div class="dk-el-body">
                                     <p>
                                     <?php echo CFS()->get('description'); ?>

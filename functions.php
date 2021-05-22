@@ -1,6 +1,6 @@
 <?php
 
-Set up taxonomy-term-image module
+// Set up taxonomy-term-image module
 include_once(get_template_directory() . '/lib/taxonomy-term-image/taxonomy-term-image.php');
 function taxonomy_term_image_custom_js_dir_url($option_name) {
     return get_template_directory_uri() . '/lib/taxonomy-term-image/js';

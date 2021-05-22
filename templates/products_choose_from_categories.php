@@ -6,31 +6,11 @@
 get_header();
 ?>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydraulic Equipment Products List (Choose from the product categories) | Oil Hydraulics List | Daikin Industries, Ltd. Oil Machine Division</title>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/common.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/products_by_categories.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap-grid.css">
-   
-</head>
-<body> -->
     <div id="main-content" class="container">
         <div class="row">
             <div class="col" id="products-by-categories-header">Products (Choose from the product categories)</div>
         </div>
-        <div class="row pb-3">
-            <div class="col-8">
-                <input type="text" placeholder="Example: SUPER UNIT, SUT" class="full-width" id="search-input">
-            </div>
-            <div class="col-4">
-                <button value="Search" class="full-width" id="search-button">Search</button>
-            </div>
-        </div>
+<?php get_template_part('/template-parts/product-search-bar') ?>
         <div class="row py-3">
             <div class="col" id="choose-categories">Choose from the product categories</div>
             <div class="col">

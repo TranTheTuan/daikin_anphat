@@ -7,6 +7,17 @@ get_header();
 
 $query = $_GET['query'];
 
+
+
+if (isset($_GET["limit"]) && trim($_GET["limit"]) != '') {
+    $limit = $_GET['limit'];    
+    if($limit == 'all') {
+        $limit = -1;
+    }
+} else {
+    $limit = -1;
+}
+
 $args = array(
     'post_type' => 'product',
     'meta_query' => array(
@@ -14,8 +25,8 @@ $args = array(
             'key' => 'product_code',
             'value' => $query,
             'compare' => 'LIKE'
-        )
-    )
+        )),
+    'posts_per_page' => $limit
 );
 
 $products_query = new WP_Query($args);
@@ -26,17 +37,7 @@ $products_query = new WP_Query($args);
         <div class="row">
             <div class="col" id="product-search-header">SEARCH RESULT : <?php echo $query; ?></div>
         </div>
-        <form action="<?php echo home_url('/product-search'); ?>">
-        <div class="row pb-3">
-            <div class="col-8">
-                <input type="text" placeholder="Example: SUPER UNIT, SUT" class="full-width product-search-input" name="query">
-            </div>
-            <div class="col-4">
-                <button value="Search" class="full-width product-search-button">Search</button>
-            </div>
-        </div>
-        </form>     
-
+<?php get_template_part('/template-parts/product-search-bar') ?>
 <?php
     if($products_query->post_count) {
         echo ' 
@@ -44,16 +45,9 @@ $products_query = new WP_Query($args);
             <div class="col" id="search-result-count">
                 SEARCH RESULT : <span style="font-weight: bold;">'.$query.'</span><span class="m-3"><span style="font-weight: bold;">'.$products_query->post_count.'</span> results</span>
             </div>
-        </div>
+        </div>';
         
-        <div class="row mt-4">
-                <div class="col limit">
-                    <a href="# limit-10">10</a> |
-                    <a href="# limit-20">20</a> |
-                    <a href="# limit-50">50</a> |
-                    <a href="# limit-all">All</a>
-                </div>
-            </div>';
+        genChooseLimitBar($query, $limit);
 
         foreach($products_query->posts as $product) {
             $product_metas = get_post_meta($product->ID);
@@ -106,30 +100,67 @@ $products_query = new WP_Query($args);
     }
 
 ?>
-       
-        <div class="row mt-4">
-            <div class="col limit">
-                <a href="# limit-10">10</a> |
-                <a href="# limit-20">20</a> |
-                <a href="# limit-50">50</a> |
-                <a href="# limit-all">All</a>
-            </div>
-        </div>
+<?php
+    genChooseLimitBar($query, $limit);
+?>
+        
         <div class="row mt-4">
             <div class="col" id="search-from-categories">
-                Search from Product Categories
+                <div class="row">
+                    <div class="col links-header">Search from Product Categories</div>
+                </div>
+
+                <div class="row mb-3 index-link-container">
+                    <ul>
+<?php
+    $categories = get_terms('product-category');
+    foreach($categories as $category) {
+        echo '<li><a href="' . home_url('/product-category') . '?cid=' . $category->term_id . '" class="arrow">'.$category->name.'</a></li>';
+    }
+?>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col" id="products-list">
-
+        <div class="row">
+            <div class="col" id="search-from-categories">
+                <div class="row">
+                    <div class="col links-header">Hydraulic Equipment Products List</div>
+                </div>
+                <div class="row mb-3 index-link-container">
+                    <ul>
+                        <li><a href="<?php echo home_url('/products-by-categories'); ?>" class="arrow">Choose from the product categories</a></li>
+                        <li><a href="<?php echo home_url('/products-by-codes'); ?>" class="arrow">Choose from the product codes</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
 
         
     </div>
 
 <?php
 get_footer();
+
+function genChooseLimitBar($query, $limit) {
+    $url = home_url('/product-search');
+    echo '
+    <div class="row mt-4">
+        <div class="col limit">'.
+            getLimitLink($limit, '10', $url, $query) . ' | ' .
+            getLimitLink($limit, '20', $url, $query) . ' | ' .
+            getLimitLink($limit, '50', $url, $query) . ' | ' .
+            getLimitLink($limit, 'all', $url, $query) . 
+        '</div>
+    </div>';
+}
+
+function getLimitLink($requestedLimit, $genLimit, $url, $query) {
+    if ($requestedLimit !="" && ($requestedLimit == $genLimit || ($requestedLimit == -1 && $genLimit == 'all' && isset($_GET["limit"])))) {
+        return '<a id="requested-limit">'.ucfirst($genLimit).'</a>';
+    } else {
+        return '<a href="'.$url."/?query=".$query.'&limit='. $genLimit .'">'.ucfirst($genLimit).'</a>';
+    }
+}
+
 ?>

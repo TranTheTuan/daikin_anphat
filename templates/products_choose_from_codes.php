@@ -10,14 +10,7 @@ get_header();
         <div class="row">
             <div class="col products-by-x-header">Products (Choose from the product codes)</div>
         </div>
-        <div class="row pb-3">
-            <div class="col-8">
-                <input type="text" placeholder="Example: SUPER UNIT, SUT" class="full-width product-search-input">
-            </div>
-            <div class="col-4">
-                <button value="Search" class="full-width product-search-button">Search</button>
-            </div>
-        </div>
+<?php get_template_part('/template-parts/product-search-bar') ?>
         <div class="row py-3">
             <div class="col choose-x">Choose from the product codes</div>
             <div class="col">

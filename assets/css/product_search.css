@@ -36,8 +36,32 @@
     text-decoration-color: rgb(0, 153, 204);
 }
 
+#request-limit {
+    font-weight: bold;
+}
+
 #not-found {
     color: rgb(102, 102, 102);
     font-size: 14px;
     line-height: 21.9833px;
+}
+
+.links-header {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23.55px;
+}
+
+.product-category-link {
+    color: rgb(0, 153, 204);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.9833px;
+    text-decoration: rgb(0, 153, 204);
+    text-decoration-color: rgb(0, 153, 204);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-indent: -14px;
 }

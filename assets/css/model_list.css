@@ -1,0 +1,36 @@
+.model-list-text-content {
+    width: 960px;
+}
+
+#model-list-title {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 47.1px;
+}
+
+#model-list-description {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 21.9833px;
+
+}
+
+ol.model-list-img-caption {
+    counter-reset: item;
+    list-style-type: none;
+
+}
+
+ol.model-list-img-caption li {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    line-height: 18.8333px;
+    margin-bottom: 7px;
+}
+
+ol.model-list-img-caption li::before {
+    content: '*' counter(item, decimal) ': ';
+    counter-increment: item;
+}

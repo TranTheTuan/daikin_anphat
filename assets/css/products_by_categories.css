@@ -47,7 +47,7 @@
     height: 50px;
 }
 
-#categories {
+.common-border {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);

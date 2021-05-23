@@ -54,6 +54,7 @@ function daikinanphat_menus(){
 add_action('init', 'daikinanphat_menus');
 
 function daikinanphat_post_type(){
+    register_post_type('slideshow', array('label' => 'Slideshow', 'public' => true));
     register_post_type('product_line', array('label'=>'Product Line', 'public' => true));
 }
 

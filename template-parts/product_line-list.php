@@ -27,8 +27,35 @@
                     </div>	
                 <?php endwhile;
 
+              
+
                 wp_reset_postdata();
             ?>
+                <div class="col-lg-4 mb-3" id="product-line-list-buttons">
+                    <div class="row">
+                        <div class="col">
+                            <form action="<?php bloginfo('wpurl'); ?>/model-list">
+                            <button id="model-list-button" class="full-width arrow">Hybrid Hydraulic Unit Model List</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <form action="<?php bloginfo('wpurl'); ?>/products-by-categories">
+                            <button class="choose-product-from-button full-width arrow">
+                                Products<sub> (Choose from the product categories)</sub>
+                            </button>
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <form action="<?php bloginfo('wpurl'); ?>/products-by-codes">
+                            <button class="choose-product-from-button full-width arrow">
+                                Products<sub> (Choose from the product codes)</sub>
+                            </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
              </div>
         </div>
     </div>

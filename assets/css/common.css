@@ -12,6 +12,10 @@ body {
     width: 960px;
 }
 
+.main-content {
+    max-width: 960px !important;
+}
+
 .full-width {
     width: 100%;
 }
@@ -218,6 +222,20 @@ body {
     font-size: 14px;
     line-height: 21.9833px;
 
+}
+
+.case-study-name {
+    margin-left: 12px;
+    /* margin-top: -10px; */
+}
+
+.features-name {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.9833px;
+    margin-left: 12px;
+    margin-bottom: 6px;
 }
 
 .features-title {

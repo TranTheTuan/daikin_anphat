@@ -20,7 +20,7 @@ get_header();
                 
             </div>
         </div>
-        <div id="categories" class="p-4">
+        <div class="common-border p-4">
 <?php
     $i = 0;
     $terms = get_terms('product-category', array('hide_empty' => false));

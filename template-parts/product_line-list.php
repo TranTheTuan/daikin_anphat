@@ -1,6 +1,6 @@
 <div class="dk-pl-bg">
-    <div class="container">
-        <div class="w-75 mx-auto">
+    <div class="container main-content">
+        <div class="mx-auto">
             <h3>Daikin Hydraulics Products</h2>
             <div class="row mb-lg-3">
             <?php

@@ -55,7 +55,11 @@ get_header();
                     <ul>';
         for ($i = 0; $i < $products_query -> post_count; $i++) {
             $post_metas = get_post_meta($products_query->posts[$i]->ID);
-            echo '      <li><a href="'.home_url('/product-category').'?cid='.$term->term_id.'&pid='.$products_query->posts[$i]->ID.'" class="product arrow"><span>'.$post_metas['product_code'][0].'</span><span class="m-3">'. $products_query->posts[$i]->post_title .'</span></a></li>';
+
+            $product_category_terms = get_the_terms($products_query->posts[$i]->ID, 'product-category' );
+            $cid = $product_category_terms[0] -> term_id;
+
+            echo '      <li><a href="'.home_url('/product-category').'?cid='.$cid.'&pid='.$products_query->posts[$i]->ID.'#product-'.$products_query->posts[$i]->ID.'" class="product arrow"><span>'.$post_metas['product_code'][0].'</span><span class="m-3">'. $products_query->posts[$i]->post_title .'</span></a></li>';
         }                    
         echo '      </ul>
                 </div>
@@ -83,7 +87,11 @@ get_header();
             <ul>';
     for ($i = 0; $i < $products_query -> post_count; $i++) {
         $post_metas = get_post_meta($products_query->posts[$i]->ID);
-        echo '      <li><a href="'.home_url('/product-category').'?cid='.$term->term_id.'&pid='.$products_query->posts[$i]->ID.'" class="product arrow"><span>'.$post_metas['product_code'][0].'</span><span class="m-3">'. $products_query->posts[$i]->post_title .'</span></a></li>';
+
+        $product_category_terms = get_the_terms($products_query->posts[$i]->ID, 'product-category' );
+        $cid = $product_category_terms[0] -> term_id;
+
+        echo '      <li><a href="'.home_url('/product-category').'?cid='.$cid.'&pid='.$products_query->posts[$i]->ID.'#product-'.$products_query->posts[$i]->ID.'" class="product arrow"><span>'.$post_metas['product_code'][0].'</span><span class="m-3">'. $products_query->posts[$i]->post_title .'</span></a></li>';
     }                    
     echo '      </ul>
             </div>

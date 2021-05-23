@@ -7,10 +7,12 @@ function taxonomy_term_image_custom_js_dir_url($option_name) {
 }
 add_filter('taxonomy-term-image-js-dir-url', 'taxonomy_term_image_custom_js_dir_url');
 
-// Product
+// Product (custom post type)
 include_once(get_template_directory() . '/product.php');
-// Product category
+// Product category (custom taxonomy for Product)
 include_once(get_template_directory() . '/product-category.php');
+// Content (custom post type)
+include_once(get_template_directory() . '/content-custom-post-type.php');
 
 function daikinanphat_theme_support(){
     add_theme_support('title-tag');
@@ -31,6 +33,7 @@ function daikinanphat_register_style(){
     wp_enqueue_style('daikin-anphat-stylesheet9', get_template_directory_uri() . '/assets/css/footer.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet10', get_template_directory_uri() . '/assets/css/model_list.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet11', get_template_directory_uri() . '/assets/css/about.css', array('daikin-anphat-bootstrap'), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet12', get_template_directory_uri() . '/assets/css/contents.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css', array(), '5.0.0', 'all');
     wp_enqueue_style('daikin-anphat-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', array(), '5.13.0', 'all');
 }

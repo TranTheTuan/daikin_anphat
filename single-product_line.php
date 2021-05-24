@@ -39,9 +39,9 @@ get_header();
         <?php endif ?>
         <?php if (CFS()->get('download') != ""): ?>
             <div class="col">
-                <form action="<?php echo get_home_url() . '/' . CFS()->get('download') ?>">
+                <form action="<?php echo CFS()->get('download') ?>">
                     <input style="display: none;" type="text" id="pid" name="pid" value="<?php echo $post->ID; ?>">
-                    <button class="category-bottom-button category-product-list full-width arrow">Click here for downloading the cataloguePDF</button>
+                    <button class="category-bottom-button category-product-list full-width arrow pdf">Click here for downloading the cataloguePDF</button>
                 </form>
             </div>
         <?php endif ?>
@@ -54,7 +54,7 @@ get_header();
             <li class="category-typical-product arrow-down"><a href="#func-block">Functions</a></li>
         <?php endif ?>
         <?php if (CFS()->get('function_options') != ""): ?>
-            <li class="category-typical-product arrow-down"><a href=#fo-block">Function Options</a></li>
+            <li class="category-typical-product arrow-down"><a href="#fo-block">Function Options</a></li>
         <?php endif ?>
         <?php if (CFS()->get('unit_options') != ""): ?>
             <li class="category-typical-product arrow-down"><a href="#uo-block">Unit Options</a></li>
@@ -105,7 +105,7 @@ get_header();
                     <h4 class="features-name">Various case studies of energy-saving such as the power consumption reductions in 72%.</h4>
                     <div class="case-study-name">
                         <?php foreach(CFS()->get('case_studies') as $ft): ?>
-                            <a class="category-typical-product arrow" href="<?php echo $ft['link']  . '/?pid=' . $post->ID  ?>"><?php echo $ft['name']; ?></a>
+                            <a class="category-typical-product arrow me-3" href="<?php echo $ft['link']  . '/?pid=' . $post->ID  ?>"><?php echo $ft['name']; ?></a>
                         <?php endforeach; ?>
                     </div>
                 </div>

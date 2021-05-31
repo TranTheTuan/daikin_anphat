@@ -45,7 +45,7 @@
 function gen_content_view($content) {
     $metas = get_post_meta($content->ID);
     echo '<div class="col-4 mb-5">
-        <a href="'.$metas['content_link'][0].'">'
+        <a href="'.get_page_link($metas['content_link'][0]).'">'
         .wp_get_attachment_image($metas['thumbnail'][0], 'full' ).
         '<div><span class="content-title arrow">'.$content->post_title.'</span></div>
             <div class="content-description">'.$content->description.'</div>

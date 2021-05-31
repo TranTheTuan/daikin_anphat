@@ -33,7 +33,7 @@ $products_query = new WP_Query($args);
 
 ?>
 
-    <div class="container" id="product-search-main-content">
+    <div class="container" id="product-search-main-content" style="margin-bottom: 50px;">
         <div class="row">
             <div class="col" id="product-search-header">SEARCH RESULT : <?php echo $query; ?></div>
         </div>

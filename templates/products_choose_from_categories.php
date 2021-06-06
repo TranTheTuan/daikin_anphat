@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-    <div id="main-content" class="container">
+    <div id="main-content" class="container" style="margin-bottom: 50px;">
         <div class="row">
             <div class="col" id="products-by-categories-header">Products (Choose from the product categories)</div>
         </div>

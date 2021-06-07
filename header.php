@@ -46,15 +46,29 @@
 		</div>
 	</nav>
 
-	<nav class="sub-menu">
-		<div class="container main-content">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">About</a>
+	<nav class="navbar navbar-expand-lg navbar-light sub-nav">
+		<!-- <div class="sub-nav"> -->
+			<div class="container main-content">
+				<!-- <div class="row">
+					<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">Giới thiệu</a>
 					<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">News</a>
-				</li>
-			</ul>
-		</div>
+				</div> -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subNav" aria-controls="subNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="subNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">Giới thiệu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">Tin tức</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!-- </div> -->
+
 	</nav>
 		
     <!-- </header> -->

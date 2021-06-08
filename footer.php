@@ -10,31 +10,31 @@
                 </div>
                 <div class="row my-5">
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name arrow">Liên hệ với chúng tôi</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Hà Nội</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">TP. Hồ Chí Minh</a>
+                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Liên hệ với chúng tôi</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hà Nội</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">TP. Hồ Chí Minh</a>
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name arrow">Thông tin công ty</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Giới thiệu công ty</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Đối tác</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Facebook</a>
+                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Thông tin công ty</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Giới thiệu công ty</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Đối tác</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Facebook</a>
 
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name arrow">Hướng dẫn khách hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Hướng dẫn mua hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Hướng dẫn thanh toán</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Giao nhận, vận chuyển</a>
+                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Hướng dẫn khách hàng</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn mua hàng</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn thanh toán</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Giao nhận, vận chuyển</a>
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name arrow">Chính sách</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Chính sách đại lý</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Chính sách bán hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Chính sách bảo hành</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Chính sách đổi hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Chính sách bảo mật</a>
-                        <a href="#" class="footer-link footer-link-group-elem arrow">Dịch vụ sửa chữa</a>
+                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Chính sách</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đại lý</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bán hàng</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo hành</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đổi hàng</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo mật</a>
+                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Dịch vụ sửa chữa</a>
                     </div>
                 </div>
                 <div class="row">

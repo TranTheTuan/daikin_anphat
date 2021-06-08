@@ -1,5 +1,6 @@
 .contents-container {
-    border-color: #00CDFF;
+    /* border-color: #00CDFF; */
+    border-color: rgb(210,210,210);
     border-width: 4px 0px 0px 0px;
     border-style: solid;
     padding-top: 50px;

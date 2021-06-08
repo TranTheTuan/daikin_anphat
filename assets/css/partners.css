@@ -1,0 +1,26 @@
+.partners-container {
+    /* border-color: #00CDFF; */
+    border-color: rgb(210,210,210);
+    border-width: 4px 0px 0px 0px;
+    border-style: solid;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+
+.partners {
+    width: 960px;
+}
+
+.partners-title {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34.5333px;
+    margin-bottom: 13px;
+}
+
+img.partner-logo {
+    width: 180px;
+    height: auto;
+}

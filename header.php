@@ -15,20 +15,20 @@
 <body>
     
     <!-- <header class="header text-center"> -->
-        
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+	<nav class="navbar nav-custom navbar-expand-lg navbar-light bg-light">
 		<div class="container main-content">
 			<a class="navbar-brand" href="<?php echo get_home_url() ?>">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" alt="" width="170" height="36"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<img class="py-auto" src="<?php echo get_template_directory_uri() . '/assets/images/logo-anphat.png' ?>" alt="" width="" height="66"></a>
+			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			</button> -->
+			<!-- <div class="" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">About</a>
 					</li>
-				</ul>
+				</ul> -->
 				<?php
 					// wp_nav_menu(
 					// 	array(
@@ -39,9 +39,36 @@
 					// 	)
 					// );
 				?>
-				<?php get_search_form(); ?>
-			</div>
+				
+			<!-- </div> -->
+			<a class="navbar-brand" href="<?php echo get_home_url() ?>">
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" alt="" height="36"></a>
 		</div>
+	</nav>
+
+	<nav class="navbar navbar-expand-lg navbar-light sub-nav">
+		<!-- <div class="sub-nav"> -->
+			<div class="container main-content">
+				<!-- <div class="row">
+					<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">Giới thiệu</a>
+					<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">News</a>
+				</div> -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subNav" aria-controls="subNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="subNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">Giới thiệu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">Tin tức</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!-- </div> -->
+
 	</nav>
 		
     <!-- </header> -->

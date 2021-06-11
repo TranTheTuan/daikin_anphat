@@ -1,7 +1,7 @@
 <div class="dk-pl-bg">
     <div class="container main-content">
         <div class="mx-auto">
-            <h3>Daikin Hydraulics Products</h2>
+            <h3>Các sản phẩm thủy lực Daikin</h2>
             <div class="row mb-lg-3">
             <?php
                 $args = array(

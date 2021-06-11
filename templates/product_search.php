@@ -34,8 +34,8 @@ $products_query = new WP_Query($args);
 ?>
 
     <div class="container" id="product-search-main-content" style="margin-bottom: 50px;">
-        <div class="row">
-            <div class="col" id="product-search-header">SEARCH RESULT : <?php echo $query; ?></div>
+        <div class="row mt-3">
+            <div class="col" id="product-search-header">TÌM KIẾM : <?php echo $query; ?></div>
         </div>
 <?php get_template_part('/template-parts/product-search-bar') ?>
 <?php
@@ -43,7 +43,7 @@ $products_query = new WP_Query($args);
         echo ' 
         <div class="row mt-2">
             <div class="col" id="search-result-count">
-                SEARCH RESULT : <span style="font-weight: bold;">'.$query.'</span><span class="m-3"><span style="font-weight: bold;">'.$products_query->post_count.'</span> results</span>
+                KẾT QUẢ TÌM KIẾM : <span style="font-weight: bold;">'.$query.'</span><span class="m-3"><span style="font-weight: bold;">'.$products_query->post_count.'</span> kết quả</span>
             </div>
         </div>';
         
@@ -61,7 +61,7 @@ $products_query = new WP_Query($args);
                         <div class="col-4 image-container">'.wp_get_attachment_image($product_metas['product_image'][0], 'full').'</div>
                         <div class="col-8">
                             <div class="row my-4">
-                                <div class="col features-title">Features</div>
+                                <div class="col features-title">Các tính năng</div>
                             </div>
                             <div class="row features-content mb-4">
                                 <div class="col">'.$product_metas['features'][0].'</div>
@@ -94,7 +94,7 @@ $products_query = new WP_Query($args);
         echo '
         <div class="row mt-4">
             <div class="col" id="not-found">
-                Products relevant to <span style="font-weight:bold;">'.$query.'</span> not found.
+                Không tìm thấy sản phẩm nào liên quan đến <span style="font-weight:bold;">'.$query.'</span>.
             </div>
         </div>';
     }
@@ -107,7 +107,7 @@ $products_query = new WP_Query($args);
         <div class="row mt-4">
             <div class="col" id="search-from-categories">
                 <div class="row">
-                    <div class="col links-header">Search from Product Categories</div>
+                    <div class="col links-header">Tìm kiếm theo phân loại sản phẩm</div>
                 </div>
 
                 <div class="row mb-3 index-link-container">
@@ -125,12 +125,12 @@ $products_query = new WP_Query($args);
         <div class="row">
             <div class="col" id="search-from-categories">
                 <div class="row">
-                    <div class="col links-header">Hydraulic Equipment Products List</div>
+                    <div class="col links-header">Danh sách các sản phẩm thiết bị thủy lực</div> <!-- Hydraulic Equipment Products List -->
                 </div>
                 <div class="row mb-3 index-link-container">
                     <ul>
-                        <li><a href="<?php echo home_url('/products-by-categories'); ?>" class="arrow">Choose from the product categories</a></li>
-                        <li><a href="<?php echo home_url('/products-by-codes'); ?>" class="arrow">Choose from the product codes</a></li>
+                        <li><a href="<?php echo home_url('/products-by-categories'); ?>" class="arrow">Chọn theo phân loại sản phẩm</a></li>
+                        <li><a href="<?php echo home_url('/products-by-codes'); ?>" class="arrow">Chọn theo mã sản phẩm</a></li>
                     </ul>
                 </div>
             </div>
@@ -159,7 +159,7 @@ function getLimitLink($requestedLimit, $genLimit, $url, $query) {
     if ($requestedLimit !="" && ($requestedLimit == $genLimit || ($requestedLimit == -1 && $genLimit == 'all' && isset($_GET["limit"])))) {
         return '<a id="requested-limit">'.ucfirst($genLimit).'</a>';
     } else {
-        return '<a href="'.$url."/?query=".$query.'&limit='. $genLimit .'">'.ucfirst($genLimit).'</a>';
+        return '<a href="'.$url."/?query=".$query.'&limit='. $genLimit .'">Tất cả</a>';
     }
 }
 

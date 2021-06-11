@@ -43,14 +43,14 @@
                         <div class="col-6">
                             <form action="<?php bloginfo('wpurl'); ?>/products-by-categories">
                             <button class="choose-product-from-button full-width arrow">
-                                Products<sub> (Choose from the product categories)</sub>
+                                Sản phẩm<sub> (Chọn theo phân loại sản phẩm)</sub>
                             </button>
                             </form>
                         </div>
                         <div class="col-6">
                             <form action="<?php bloginfo('wpurl'); ?>/products-by-codes">
                             <button class="choose-product-from-button full-width arrow">
-                                Products<sub> (Choose from the product codes)</sub>
+                                Sản phẩm<sub> (Chọn theo mã sản phẩm)</sub>
                             </button>
                             </form>
                         </div>

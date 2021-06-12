@@ -36,6 +36,7 @@ function daikinanphat_register_style(){
     wp_enqueue_style('daikin-anphat-stylesheet12', get_template_directory_uri() . '/assets/css/contents.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet13', get_template_directory_uri() . '/assets/css/product_line-list.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet14', get_template_directory_uri() . '/assets/css/partners.css', array('daikin-anphat-bootstrap'), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet15', get_template_directory_uri() . '/assets/css/energy_saving.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.0.0', 'all');
     wp_enqueue_style('daikin-anphat-fontawesome', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.13.0', 'all');
 }

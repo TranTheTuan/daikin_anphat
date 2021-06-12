@@ -10,31 +10,31 @@
                 </div>
                 <div class="row my-5">
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Liên hệ với chúng tôi</a>
+                        <a class="footer-link footer-link-group-name yellow-arrow">Liên hệ với chúng tôi</a>
                         <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hà Nội</a>
                         <a href="#" class="footer-link footer-link-group-elem yellow-arrow">TP. Hồ Chí Minh</a>
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Thông tin công ty</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Giới thiệu công ty</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Đối tác</a>
+                        <a class="footer-link footer-link-group-name yellow-arrow">Thông tin công ty</a>
+                        <a href="https://thietbicongnghiep.net/gioi-thieu-cong-ty-1-7-1041.html" class="footer-link footer-link-group-elem yellow-arrow">Giới thiệu công ty</a>
+                        <a href="https://thietbicongnghiep.net/doi-tac-1-7-892.html" class="footer-link footer-link-group-elem yellow-arrow">Đối tác</a>
                         <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Facebook</a>
 
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Hướng dẫn khách hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn mua hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn thanh toán</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Giao nhận, vận chuyển</a>
+                        <a class="footer-link footer-link-group-name yellow-arrow">Hướng dẫn khách hàng</a>
+                        <a href="https://thietbicongnghiep.net/huong-dan-mua-hang-1-7-894.html" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn mua hàng</a>
+                        <a href="https://thietbicongnghiep.net/huong-dan-thanh-toan-1-7-895.html" class="footer-link footer-link-group-elem yellow-arrow">Hướng dẫn thanh toán</a>
+                        <a href="https://thietbicongnghiep.net/giao-nhan-van-chuyen-1-7-3602.html" class="footer-link footer-link-group-elem yellow-arrow">Giao nhận, vận chuyển</a>
                     </div>
                     <div class="col-3">
-                        <a href="#" class="footer-link footer-link-group-name yellow-arrow">Chính sách</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đại lý</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bán hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo hành</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đổi hàng</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo mật</a>
-                        <a href="#" class="footer-link footer-link-group-elem yellow-arrow">Dịch vụ sửa chữa</a>
+                        <a class="footer-link footer-link-group-name yellow-arrow">Chính sách</a>
+                        <a href="https://thietbicongnghiep.net/chinh-sach-dai-ly-1-7-16330.html" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đại lý</a>
+                        <a href="https://thietbicongnghiep.net/chinh-sach-ban-hang-1-7-896.html" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bán hàng</a>
+                        <a href="https://thietbicongnghiep.net/chinh-sach-bao-hanh-1-7-897.html" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo hành</a>
+                        <a href="https://thietbicongnghiep.net/chinh-sach-doi-ha-1-7-3603.html" class="footer-link footer-link-group-elem yellow-arrow">Chính sách đổi hàng</a>
+                        <a href="https://thietbicongnghiep.net/chinh-sach-bao-mat-1-7-3385.html" class="footer-link footer-link-group-elem yellow-arrow">Chính sách bảo mật</a>
+                        <a href="https://thietbicongnghiep.net/dich-vu-sua-chua-1-7-898.html" class="footer-link footer-link-group-elem yellow-arrow">Dịch vụ sửa chữa</a>
                     </div>
                 </div>
                 <div class="row">

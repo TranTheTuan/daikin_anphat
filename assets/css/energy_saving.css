@@ -1,0 +1,66 @@
+#energy-saving-container {
+    width: 960px;
+    font-size: 14px;
+    line-height: 21.9833px;
+}
+
+.energy-saving-h1-upc {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 47.1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.energy-saving-h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 47.1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.energy-saving-h2-upc{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 47.1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.energy-saving-intro {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 21.9833px;
+    margin-bottom: 30px
+}
+
+.energy-saving-ref-intro {
+    margin-top: 10px;
+}
+
+.energy-saving-panel {
+    height: auto;
+    min-height: 250px;
+    border: 1px solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.energy-saving-panel-title {
+    font-size: 15px;
+    font-weight: 700;
+    height: 47.1px;
+    line-height: 23.55px;
+    margin-bottom: 6px;
+}
+
+.energy-saving-panel-content {
+    color: rgb(102, 102, 102);
+}
+
+table.energy-saving-table, table.energy-saving-table td, table.energy-saving-table th {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+}

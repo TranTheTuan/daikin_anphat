@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col">
                             <form action="<?php bloginfo('wpurl'); ?>/model-list">
-                            <button id="model-list-button" class="full-width arrow">Hybrid Hydraulic Unit Model List</button>
+                            <button id="model-list-button" class="full-width arrow">Danh sách các dòng thiết bị thủy lực</button>
                             </form>
                         </div>
                     </div>

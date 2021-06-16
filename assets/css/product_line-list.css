@@ -1,5 +1,6 @@
 #product-line-list-buttons button {
-    background: linear-gradient(rgb(255, 255, 255), rgb(242, 242, 242));
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(242, 242, 242)); */
+    background: #fcfcfc;
     border-color: rgb(204, 204, 204);
     border-width: 0.8px;
     border-style:solid;
@@ -10,7 +11,7 @@
 }
 
 #product-line-list-buttons button:hover {
-    background: linear-gradient(#f8f8f8, #e9e9e9);
+    background: linear-gradient(#fcfcfc, #f8f8f8);
 }
 
 #model-list-button {

@@ -39,17 +39,17 @@ get_header();
         <div class="row py-3">
              <div class="col">
                 <form action="<?php bloginfo('wpurl'); ?>/products-by-categories">
-                    <button class="full-width choose-y-button">Choose from the product categories</button>
+                    <button class="full-width choose-y-button">Chọn theo phân loại sản phẩm</button>
                 </form>
             </div>
             <div class="col">
                 <form action="<?php bloginfo('wpurl'); ?>/products-by-codes">
-                    <button class="full-width choose-y-button">Choose from the product codes</button>
+                    <button class="full-width choose-y-button">Chọn theo mã sản phẩm</button>
                 </form>
             </div>
         </div>
         <div class="row mt-5" id="model-no">
-            <div class="col">Model No.</div>
+            <div class="col">Mẫu sản phẩm</div>
         </div>
         <div class="row mb-3 index-link-container">
             <ul>
@@ -66,7 +66,7 @@ get_header();
             <div class="col">
 <?php
             if(wp_get_attachment_url($term_metas['major_specs'][0]) != "") {
-                echo '<a href="'.wp_get_attachment_url($term_metas['major_specs'][0]).'" class="arrow pdf">Major specifications: '.$category->name.'</a>';
+                echo '<a href="'.wp_get_attachment_url($term_metas['major_specs'][0]).'" class="arrow pdf">Các thông số kỹ thuật chính: '.$category->name.'</a>';
 
             }
 ?>
@@ -86,7 +86,7 @@ get_header();
                     <div class="col-4 image-container">'.wp_get_attachment_image($product_metas['product_image'][0], 'full').'</div>
                     <div class="col-8">
                         <div class="row my-4">
-                            <div class="col features-title">Features</div>
+                            <div class="col features-title">Các tính năng</div>
                         </div>
                         <div class="row features-content mb-4">
                             <div class="col">'.$product_metas['features'][0].'</div>

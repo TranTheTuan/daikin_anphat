@@ -1,7 +1,7 @@
 <div class="dk-pl-bg">
     <div class="container main-content">
         <div class="mx-auto">
-            <h3>Daikin Hydraulics Products</h2>
+            <h3>Các sản phẩm thủy lực Daikin</h2>
             <div class="row mb-lg-3">
             <?php
                 $args = array(
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col">
                             <form action="<?php bloginfo('wpurl'); ?>/model-list">
-                            <button id="model-list-button" class="full-width arrow">Hybrid Hydraulic Unit Model List</button>
+                            <button id="model-list-button" class="full-width arrow">Danh sách các dòng thiết bị thủy lực</button>
                             </form>
                         </div>
                     </div>
@@ -43,14 +43,14 @@
                         <div class="col-6">
                             <form action="<?php bloginfo('wpurl'); ?>/products-by-categories">
                             <button class="choose-product-from-button full-width arrow">
-                                Products<sub> (Choose from the product categories)</sub>
+                                Sản phẩm<sub> (Chọn theo phân loại sản phẩm)</sub>
                             </button>
                             </form>
                         </div>
                         <div class="col-6">
                             <form action="<?php bloginfo('wpurl'); ?>/products-by-codes">
                             <button class="choose-product-from-button full-width arrow">
-                                Products<sub> (Choose from the product codes)</sub>
+                                Sản phẩm<sub> (Chọn theo mã sản phẩm)</sub>
                             </button>
                             </form>
                         </div>

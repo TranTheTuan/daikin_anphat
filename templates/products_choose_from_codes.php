@@ -7,15 +7,15 @@ get_header();
 ?>
 
     <div class="container" id="choose-products-main-content" style="margin-bottom: 50px;">
-        <div class="row">
-            <div class="col products-by-x-header">Products (Choose from the product codes)</div>
+        <div class="row mt-3">
+            <div class="col products-by-x-header">Các sản phẩm (Chọn theo mã sản phẩm)</div>
         </div>
 <?php get_template_part('/template-parts/product-search-bar') ?>
         <div class="row py-3">
-            <div class="col choose-x">Choose from the product codes</div>
+            <div class="col choose-x">Chọn theo mã sản phẩm</div>
             <div class="col">
                 <form action="<?php bloginfo('wpurl'); ?>/products-by-categories">
-                    <button class="full-width choose-y-button">Choose from the product categories</button>
+                    <button class="full-width choose-y-button">Chọn theo phân loại sản phẩm</button>
                 </form>
             </div>
         </div>

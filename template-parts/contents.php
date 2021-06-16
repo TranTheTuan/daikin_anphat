@@ -6,7 +6,7 @@
 <div class="contents-container">
     <div class="container-fluid contents">
         <div class="row">
-            <div class="col contents-title">Contents</div>
+            <div class="col contents-title">Các bài viết</div>
         </div>
 <?php
     $i = 0;

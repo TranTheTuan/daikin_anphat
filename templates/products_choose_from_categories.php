@@ -7,15 +7,15 @@ get_header();
 ?>
 
     <div id="main-content" class="container" style="margin-bottom: 50px;">
-        <div class="row">
-            <div class="col" id="products-by-categories-header">Products (Choose from the product categories)</div>
+        <div class="row mt-3">
+            <div class="col" id="products-by-categories-header">Các sản phẩm (Chọn theo phân loại sản phẩm)</div>
         </div>
 <?php get_template_part('/template-parts/product-search-bar') ?>
         <div class="row py-3">
-            <div class="col" id="choose-categories">Choose from the product categories</div>
+            <div class="col" id="choose-categories">Chọn theo phân loại sản phẩm</div>
             <div class="col">
                 <form action="<?php bloginfo('wpurl'); ?>/products-by-codes">
-                    <button id="choose-codes-button" class="full-width">Choose from the product codes</button>
+                    <button id="choose-codes-button" class="full-width">Chọn theo mã sản phẩm</button>
                 </form>
                 
             </div>
@@ -87,14 +87,14 @@ function genProductCategoryView($term) {
                 <div class="col-6">
                     <form action="'.home_url('/product-category').'">
                         <input style="display: none;" type="text" id="cid" name="cid" value="'.$term->term_id.'">
-                        <button class="category-bottom-button category-product-list full-width arrow">Product List</button>
+                        <button class="category-bottom-button category-product-list full-width arrow">Danh sách sản phẩm</button>
                     </form>
                 </div>
                 <div class="col-6">';
     if(wp_get_attachment_url($term_metas['major_specs'][0]) != "") {
         echo '      <form action="'. wp_get_attachment_url($term_metas['major_specs'][0]) .'">
                         <input style="display: none;" type="text" id="cid" name="cid" value="'.$term->term_id.'">
-                        <button class="category-bottom-button category-product-list full-width arrow pdf">Major Specifications</button>
+                        <button class="category-bottom-button category-product-list full-width arrow pdf">Thông số kỹ thuật</button>
                     </form>';
     }
     echo '

@@ -13,7 +13,7 @@
                 );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();?>   
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-sm-4 mb-3">
                         <div class="dk-el">
                             <a href="<?php echo get_post_permalink($post->ID); ?>">
                                 <img src="<?php echo CFS()->get('small_image') ?>" alt="super unit" style="max-width: 100%;">
@@ -31,7 +31,20 @@
 
                 wp_reset_postdata();
             ?>
-                <div class="col-lg-4 mb-3" id="product-line-list-buttons">
+                <div class="col-sm-4 mb-3">
+                    <div class="dk-el">
+                        <a href="<?php echo get_home_url() . '/oilcon'; ?>">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/oil_cooling_unit.png' ?>" alt="super unit" style="max-width: 100%;">
+                            <div class="dk-el-body">
+                                <p>
+                                Bộ làm mát dầu biến tần đã cải thiện lớn về khả năng tiết kiệm năng lượng, công nghệ điều khiển trung tâm của Daikin đã phát triển cho hệ điều hòa không khí
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+
+                <div class="col-sm-4 mb-3" id="product-line-list-buttons">
                     <div class="row">
                         <div class="col">
                             <form action="<?php bloginfo('wpurl'); ?>/model-list">

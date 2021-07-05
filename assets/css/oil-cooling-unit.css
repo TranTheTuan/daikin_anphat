@@ -1,0 +1,40 @@
+.dk-oil {
+    padding: 20px;
+    border: 1px solid #d3d9db;
+    height: 100%;
+    background-color: #fff;
+}
+
+.dk-oil-ttl {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.dk-oil-desc {
+    margin-top: 17px;
+    color: #666;
+    font-size: 14px;
+}
+
+.dk-oil-list {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.dk-oil-list li {
+    margin-right: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.dk-oil-list a {
+    text-decoration: none;
+    color: #0099cc;
+    font-size: 14px;
+}
+
+.dk-oil-list a:hover {
+    text-decoration: underline;
+}

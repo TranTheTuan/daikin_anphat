@@ -5,8 +5,8 @@
 get_header();
 ?>
 <?php get_template_part('/template-parts/product_line-header') ?>
-<div class="container">
-    <div class="w-75 mx-auto">
+<div class="container main-content">
+    <div class="mx-auto">
         <?php the_content(); ?>
     </div>
 </div>

@@ -37,6 +37,7 @@ function daikinanphat_register_style(){
     wp_enqueue_style('daikin-anphat-stylesheet13', get_template_directory_uri() . '/assets/css/product_line-list.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet14', get_template_directory_uri() . '/assets/css/partners.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-stylesheet15', get_template_directory_uri() . '/assets/css/energy_saving.css', array('daikin-anphat-bootstrap'), $version, 'all');
+    wp_enqueue_style('daikin-anphat-stylesheet16', get_template_directory_uri() . '/assets/css/oil-cooling-unit.css', array('daikin-anphat-bootstrap'), $version, 'all');
     wp_enqueue_style('daikin-anphat-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.0.0', 'all');
     wp_enqueue_style('daikin-anphat-fontawesome', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.13.0', 'all');
 }
@@ -62,6 +63,7 @@ add_action('init', 'daikinanphat_menus');
 function daikinanphat_post_type(){
     register_post_type('slideshow', array('label' => 'Slideshow', 'public' => true));
     register_post_type('product_line', array('label'=>'Product Line', 'public' => true));
+    register_post_type('oil_cooling_unit', array('label'=>'Oil Cooling Unit', 'public' => true));
 }
 
 add_action('init', 'daikinanphat_post_type');

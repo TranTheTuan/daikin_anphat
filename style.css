@@ -92,3 +92,10 @@ div {
 #subNav ul li a:hover {
     color: #0099cc;
 }
+
+.dk-h2 {
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}

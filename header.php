@@ -64,6 +64,9 @@
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">Tin tức</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/calculators'; ?>">Công thức</a>
+						</li>
 					</ul>
 				</div>
 			</div>

@@ -67,4 +67,16 @@ function daikinanphat_post_type(){
 }
 
 add_action('init', 'daikinanphat_post_type');
+
+function wpb_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Slide Area',
+        'id'            => 'home-slide-widget',
+        'before_widget' => '<div class="chw-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="chw-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
 ?>

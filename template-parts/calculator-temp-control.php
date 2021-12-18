@@ -55,6 +55,12 @@
         <label for="percent-power-in-to-heat">%</label>
     </div>
 
+    <div style="position:absolute;left:610px;top:570px;">
+        <label for="pump-power">Hydraulic Pump Power</label><br>
+        <input type="number" id="pump-power" style="width: 100px;" value="51" onchange="calculate_temp_control()" /><br>
+        <label for="pump-power">kW</label>
+    </div>
+
 
     <!-- Formulas -->
     <div style="position:absolute;left:560px;top:720px;font-size: 14px;">
@@ -82,14 +88,16 @@ function calculate_temp_control() {
     WaterFlow = document.getElementById("water-flow").value
     HeaterPower = document.getElementById("heater-power").value
     PercentPowerInToHeat = document.getElementById("percent-power-in-to-heat").value
+    PumpPower = document.getElementById("pump-power").value
 
     TankAreaApprox = 8 // m2
     K = 12 // W / m2 oC
 
-    TankHeatLoss = 2.47
-    CoolWaterHeatOut = 8.72
-    HeatBalance = 5.03
-    TankTempRiseRate = 0.2
+    TankHeatLoss = 0.011 * TankAreaApprox * (TankTemp - AirTemp)
+    CoolWaterHeatOut = 2778 * 4200 * 0.997 * WaterFlow * 60 * (WaterTinTout) / 10000000000
+    HeatBalance = HeaterPower - TankHeatLoss + (PercentPowerInToHeat * PumpPower / 100) - CoolWaterHeatOut
+    TankTempRiseRate = HeatBalance * 35 / TankVolume
+
 
     document.getElementById("tank-heat-loss").innerHTML = Number((TankHeatLoss).toFixed(2))
     document.getElementById("cool-water-heat-out").innerHTML = Number((CoolWaterHeatOut).toFixed(2))

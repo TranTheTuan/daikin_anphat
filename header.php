@@ -58,7 +58,7 @@
 				</button>
 				<?php
 					wp_nav_menu(array(
-						'menu' => 'Menu 1',
+						'menu' => 'primary',
 						'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0',
 						'container' => 'div',
 						'container_class' => 'collapse navbar-collapse',

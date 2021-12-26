@@ -87,6 +87,7 @@ div {
     color: #737373;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 #subNav ul li a:hover {

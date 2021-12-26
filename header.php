@@ -56,19 +56,15 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subNav" aria-controls="subNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="subNav">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/about'; ?>">Giới thiệu</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="https://thietbicongnghiep.net/tin-tuc-2-2-10687.html">Tin tức</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="<?php echo get_home_url() . '/calculators'; ?>">Công thức</a>
-						</li>
-					</ul>
-				</div>
+				<?php
+					wp_nav_menu(array(
+						'menu' => 'Menu 1',
+						'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0',
+						'container' => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id' => 'subNav',
+					))
+				?>
 			</div>
 		<!-- </div> -->
 

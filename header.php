@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An Phat - Nha phan phoi chinh hang cua Daikin tai Viet Nam">  
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/images/favicon.ico'?>"> 
-    
+    <meta name="description" content="An Phat - Nha phan phoi chinh hang cua Daikin tai Viet Nam">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/images/favicon.ico'?>">
+
 	<?php wp_head(); ?>
 
-</head> 
+</head>
 
 <body>
-    
+
     <!-- <header class="header text-center"> -->
 
 	<nav class="navbar nav-custom navbar-expand-lg navbar-light bg-light">
 		<div class="container main-content">
 			<a class="navbar-brand" href="<?php echo get_home_url() ?>">
-				<img class="py-auto" src="<?php echo get_template_directory_uri() . '/assets/images/logo-anphat.png' ?>" alt="" width="" height="66"></a>
+				<img id="anphat-logo" class="py-auto" src="<?php echo get_template_directory_uri() . '/assets/images/logo-anphat.png' ?>" alt="anphat logo"></a>
 			<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button> -->
@@ -39,10 +39,10 @@
 					// 	)
 					// );
 				?>
-				
+
 			<!-- </div> -->
 			<a class="navbar-brand" href="<?php echo get_home_url() ?>">
-				<img src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" alt="" height="36"></a>
+				<img id="daikin-logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-daikin.png' ?>" alt="daikin logo"></a>
 		</div>
 	</nav>
 
@@ -69,5 +69,5 @@
 		<!-- </div> -->
 
 	</nav>
-		
+
     <!-- </header> -->
